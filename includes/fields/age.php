@@ -12,6 +12,14 @@ function ninja_forms_register_field_age()
 		'display_function'   =>  'ninja_forms_field_age_display',
 		'save_function'      =>  '',
 		'group'              =>  'standard_fields',
+		'edit_options' => array(
+			array(
+				'type' => 'checkbox',
+				'name' => 'datepicker',
+				'label' => __( 'Datepicker', 'ninja-forms' ),
+				'default' => 1,
+			),
+		),
 		'edit_label'         =>  true,
 		'edit_label_pos'     =>  true,
 		'edit_req'           =>  true,
@@ -111,13 +119,13 @@ function ninja_forms_field_age_display( $field_id, $data )
 	if( isset( $data['mask'] ) ) {
 		$mask = $data['mask'];
 	} else {
-		$mask = '';
+		$mask = 'mm/dd/yyy';
 	}	
 
 	$mask_class = 'ninja-forms-datepicker';
 	
 	?>
-	<input id="ninja_forms_field_<?php echo $field_id; ?>" data-mask="<?php echo $mask; ?>"   name="ninja_forms_field_<?php echo $field_id; ?>" type="text" class="<?php echo $field_class; ?> <?php echo $mask_class; ?>" value="<?php echo $default_value; ?>" rel="<?php echo $field_id; ?>" />
+	<input id="ninja_forms_field_<?php echo $field_id; ?>" data-mask="<?php echo $mask; ?>"   name="ninja_forms_field_<?php echo $field_id; ?>" type="text" class="<?php echo $field_class; ?> <?php echo $mask_class; ?> ninja-forms-date" value="<?php echo $default_value; ?>" rel="<?php echo $field_id; ?>" />
 	<?php
 
 }
