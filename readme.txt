@@ -2,8 +2,8 @@
 Contributors: ivan_paulin
 Tags: ninja, forms, age, field, birth date, ninja forms
 Requires at least: 3.8
-Tested up to: 4.0
-Stable tag: 1.2
+Tested up to: 4.2.2
+Stable tag: 1.1.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -14,6 +14,8 @@ This plugin uses date picker field on front-end for adding date of birth, and co
 This plugin uses date picker field on front-end for adding date of birth, and converts birth date into age number. Input date format must be: mm/dd/yyy
 Ninja Forms plugin must be install prior Ninja Forms Age Field extension.
 
+It simply adds input field with date-picker on front-end, visitor is required to choose his birth date from calendar.
+When form is submitted, visitor age will be returned, instead of full date.
 
 
 == Installation ==

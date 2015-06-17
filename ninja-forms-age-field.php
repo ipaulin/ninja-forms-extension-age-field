@@ -3,7 +3,7 @@
  * Plugin Name: Ninja Forms Age Field
  * Plugin URI: http://wordpress.org/plugins/ninja-forms-age-field/
  * Description: This plugin uses date picker field on front-end for adding date of birth, and converts birth date into age number. Input date format must be: mm/dd/yyy
- * Version: 1.1
+ * Version: 1.1.1
  * Author: Ivan Paulin
  * Author URI: http://www.ivanpaulin.com
  * License:  GPLv2 or later
